@@ -21,14 +21,14 @@ To use the script, follow these steps:
 
 2 - Ensure you have valid AWS credentials configured on your machine. You can set up AWS CLI credentials using the AWS CLI or by manually configuring the ~/.aws/credentials file.  
 
-3 - Open the script file script.py in a text editor or integrated development environment (IDE) of your choice.  
+3 - Open the script file list_roles.py in a text editor or integrated development environment (IDE) of your choice.  
 
-4 - Modify the profile_name and region_name parameters in the line boto3.setup_default_session(profile_name='sso-bpp', region_name='') according to your AWS profile and desired region.  
+4 - Modify the profile_name and region_name parameters in the line boto3.setup_default_session(profile_name='<your prifile>', region_name='<your region>') according to your AWS profile and desired region.  
 
 5 - Save the modifications to the script file.
 
 6 - Open a terminal or command prompt, navigate to the directory containing the script, and run the following command:  
-> python script.py
+> python list_roles.py
 
 7 - The script will retrieve the IAM roles from your AWS account and display the role names and ARNs in the terminal/command prompt.  
 
@@ -38,7 +38,7 @@ To use the script, follow these steps:
 ## File Structure
 
 The repository contains the following files:  
-* 'script.py': The main script file that retrieves IAM roles and saves them to a CSV file.  
+* 'list_roles.py': The main script file that retrieves IAM roles and saves them to a CSV file.  
 * 'file_handler.py': A helper module that handles CSV file creation and saving.  
 
 
